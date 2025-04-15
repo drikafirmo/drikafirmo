@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>1 Mês de Amor 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffe6ec, #e0f7ff);
+      text-align: center;
+      padding: 20px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+    }
+    .heart {
+      font-size: 2rem;
+      animation: beat 1s infinite;
+      color: red;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    .mensagem {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff5c8a;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Oi mô ❤️</h1>
+  <img src="foto_adriana_rafael.jpg" alt="Adriana e Rafael">
+  <div class="heart">❤️</div>
+  <button onclick="mostrarMensagem()">Clica aqui, mô</button>
+  <div class="mensagem" id="mensagem">
+    <p>Hoje a gente completa 1 mês juntinhos... e eu queria te dizer algumas coisinhas 🥹</p>
+    <p>Esse tempo ao seu lado foi leve, doce, engraçado, cheio de descobertas e carinho. Eu aprendi mais sobre você, e mais sobre mim também. Cada conversa, cada abraço, cada mensagem — foi tudo importante pra mim.</p>
+    <p>Talvez você nem lembre que é hoje… mas tudo bem, eu sou assim mesmo, gosto de datas, de guardar momentos. Porque você, Rafael, é especial pra mim. E lembrar de você também é 💖</p>
+    <p>Obrigada por ser meu mô. Que venham muitos meses (e anos!) ao seu lado.</p>
+    <p>Com amor, Adriana 💌</p>
+  </div>
+
+  <iframe style="border-radius:12px; margin-top: 30px;" src="https://open.spotify.com/embed/track/0QfyXkxOfd5l9YzTq3UG4r?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

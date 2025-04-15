@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>1 Mês de Nós Dois</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffe6ec, #e0f7ff);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #d6336c;
+    }
+    .heart {
+      font-size: 2rem;
+      animation: beat 1s infinite;
+      color: red;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff5c8a;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #e84c7c;
+    }
+    .mensagem {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Oi mô ❤️</h1>
+    <img src="Imagem do WhatsApp de 2025-04-15 à(s) 15.41.48_83f30368.jpg" alt="Adriana e Rafael">
+    <p class="heart">❤️</p>
+    <button onclick="mostrarMensagem()">Clica aqui, mô</button>
+    <div class="mensagem" id="mensagem">
+      <p>Hoje a gente completa 1 mês juntinhos... e eu queria te dizer algumas coisinhas 🥹</p>
+      <p>Esse tempo ao seu lado foi leve, doce, engraçado, cheio de descobertas e carinho. Eu aprendi mais sobre você, e mais sobre mim também. Cada conversa, cada abraço, cada mensagem — foi tudo importante pra mim.</p>
+      <p>Talvez você nem lembre que é hoje… mas tudo bem, eu sou assim mesmo, gosto de datas, de guardar momentos. Porque você, Rafael, é especial pra mim. E lembrar de você também é 💖</p>
+      <p>Obrigada por ser meu mô. Que venham muitos meses (e anos!) ao seu lado.</p>
+      <p>Com amor, Adriana 💌</p>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://open.spotify.com/track/0QfyXkxOfd5l9YzTq3UG4r" type="audio/mpeg">
+    Seu navegador não suporta áudio embutido.
+  </audio>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
